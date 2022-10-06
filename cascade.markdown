@@ -49,7 +49,7 @@ Stephen J. Roberts, Tim Rocktäschel, Edward Grefenstette
 </h5>
 
 <h5 align="center">
-	NeurIPS 2022
+	<strong>NeurIPS 2022</strong>
 </h5>
 
 <center>
@@ -88,9 +88,9 @@ Reward-Free Deployment Efficiency
 </h3>
 
 <img align="left" src="/images/CASCADE_motivation.jpg" class="image-left"/>
-Imagine that we want to learn a model of a room. Green areas represent high expected information gain . A population of independently trained agents will likely all follow the trajectory to #1 at deployment. 
+Imagine that we want to learn a model of a room. <span style="color:green;font-weight: bold;">Green</span> areas represent high expected information gain. A population of independently trained agents will likely all follow the trajectory to #1 at deployment. 
 
-To avoid collecting a homogenous dataset in such cases, CASCADE trains agents by taking into account the population diversity, in addition to  the information gain, and thus encourages an individual agent to sample states that maximally improve the world model.
+To avoid collecting a homogenous dataset in such cases, CASCADE trains agents by taking into account the population diversity, in addition to  the information gain, and thus encourages each individual agent to sample states that maximally improve the world model.
 
 ---
 
@@ -139,6 +139,7 @@ Finally, we test whether the learned world models are general enough to facilita
 <h3 align="center">
 Walker
 </h3>
+Aggregated over four unseen tasks (stand, walk, run, flip).
 <p align="center">
 <img src="/images/rliable_dmc_15_deployments_new.jpg" alt="walker_iqm" height=260px/>
 </p>
@@ -151,6 +152,7 @@ Atari & Crafter
 <h3 align="center">
 Crafter Normalized Skill Success Rate
 </h3>
+Note that CASCADE not only achieves the highest average success rate but also unlocks the most (16 out of 22) unique skills among all baselines.
 <p align="center">
 <img src="/images/crafter_skill_breakdown.jpg" alt="crafter_task_breakdown" height=200px/>
 </p>
