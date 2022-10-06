@@ -2,6 +2,8 @@
 layout: page
 order: 1
 permalink: /cascade/
+description: Learning General World Models in a Handful of Reward-free Deployments
+title: Learning General World Models in a Handful of Reward-free Deployments
 ---
 
 <style>

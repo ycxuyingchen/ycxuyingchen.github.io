@@ -25,7 +25,7 @@ author:
 description: >- # this means to ignore newlines until "baseurl:"
   Homepage of Yingchen Xu, a CS PhD student at UCL and FAIR London.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yukichul.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ycxuyingchen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: YingchenX
 # github_username:  yukichul
 minima:
@@ -49,7 +49,7 @@ header_pages:
   - read.markdown
   - cascade.markdown
   
-full-width: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
