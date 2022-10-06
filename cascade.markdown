@@ -39,7 +39,7 @@ body {
 
 
 <h1 align="center">
-Learning General World Model in a Handful of Reward-free Deployments
+Learning General World Models in a Handful of Reward-free Deployments
 </h1>
 
 <h5 align="center">
