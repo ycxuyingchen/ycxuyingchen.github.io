@@ -55,10 +55,10 @@ Stephen J. Roberts, Tim Rocktäschel, Edward Grefenstette
 	<strong>NeurIPS 2022</strong>
 </h5>
 
-<center>
+<!-- <center>
 	<a href="https://github.com/ycxuyingchen/cascade">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                
 <a href="https://github.com/ycxuyingchen/cascade">[Code]</a>
-</center>
+</center> -->
 
 <h2 align="center">
 Abstract
@@ -67,7 +67,7 @@ Abstract
 Building generally capable agents is a grand challenge for deep reinforcement learning (RL). To approach this challenge practically, we outline two key desiderata: 1) to facilitate generalization, exploration should be task agnostic; 2) to facilitate scalability, exploration policies should collect large quantities of data without costly centralized retraining. Combining these two properties, we introduce the reward-free deployment efficiency setting, a new paradigm for RL research. We then present CASCADE, a novel approach for self-supervised exploration in this new setting. CASCADE seeks to learn a world model by collecting data with a population of agents, using an information theoretic objective inspired by Bayesian Active Learning. CASCADE achieves this by specifically maximizing the diversity of trajectories sampled by the population through a novel cascading objective. We show a tabular version of CASCADE theoretically improves upon naïve approaches that do not account for population diversity. We then demonstrate that CASCADE collects diverse task-agnostic datasets and learns agents that generalize zero-shot to novel, unseen downstream tasks on Atari, MiniGrid and the DM Control Suite.
 
 <p align="center">
-<img src="/images/cascade_explanation_simplified.gif" alt="cascade"/>
+<img src="/images/cascade_overview.jpg" alt="cascade"/>
 </p>
 
 ---
