@@ -38,18 +38,36 @@ body {
 	content-width: 100%;
 	padding: 1.5rem 1.5rem;
 }
+
+.inline {
+    display: inline-block;
+}
+
 </style>
 
 
+
+
 <h1 align="center">
-Learning General World Models in a Handful of Reward-free Deployments
+Learning General World Models in a Handful of Reward-Free Deployments
 </h1>
 
 <h5 align="center">
-Yingchen Xu*, Jack Parker-Holder*,  Aldo Pacchiano*,  Phillip J. Ball*,  Oleh Rybkin
+<div class="inline">Yingchen Xu<sup>*</sup><br>(UCL, FAIR)</div>&nbsp;&nbsp;&nbsp; 
+<div class="inline">Jack Parker-Holder<sup>*</sup><br>(Oxford)</div>&nbsp;&nbsp;&nbsp;  
+<div class="inline">Aldo Pacchiano<sup>*</sup><br>(MSR)</div>&nbsp;&nbsp;&nbsp;  
+<div class="inline">Phillip J. Ball<sup>*</sup><br>(Oxford)</div>&nbsp;&nbsp;&nbsp;
+<div class="inline">Oleh Rybkin<br>(UPenn)</div>  
 <br>
-Stephen J. Roberts, Tim Rocktäschel, Edward Grefenstette
+
+<div class="inline">Stephen J. Robertsbr<br>(Oxford)</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+<div class="inline">Tim Rocktäschel<br>(UCL)</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+<div class="inline">Edward Grefenstette<br>(UCL, Cohere)</div>
 </h5>
+
+<!-- <h6 align="center">
+    <sup>*</sup>Equal Contribution
+</h6> -->
 
 <h5 align="center">
 	<strong>NeurIPS 2022</strong>
@@ -106,7 +124,7 @@ Each row below visualizes data collected by a population of explorers trained by
 We can see that **CASCADE** explorers discover different parts of the world and display diverse nontrivial behaviors. On the contrary, **Plan2Explore** agents (trained without considering population diversity) collect only homogenous data. 
 
 <h4 align="center">
-Exploring Open-ended Worlds: Crafter
+Exploring Open-Ended Worlds: Crafter
 </h4>
 **CASCADE**
 <p align="center">
