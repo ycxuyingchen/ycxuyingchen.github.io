@@ -121,9 +121,9 @@ Data Diveristy
 
 Each row below visualizes data collected by a population of explorers trained by the **same** world model, deployed at the **same** time in the **same** environment. 
 
-We can see that **CASCADE** explorers discover different parts of the world and display diverse nontrivial behaviors. On the contrary, **Plan2Explore** agents (trained without considering population diversity) collect only homogenous data. 
+We can see that **CASCADE** explorers display much more diverse useful behaviors than **Plan2Explore** agents (trained without considering population diversity). 
 
-<h4 align="center">
+<!-- <h4 align="center">
 Exploring Open-Ended Worlds: Crafter
 </h4>
 **CASCADE**
@@ -133,11 +133,11 @@ Exploring Open-Ended Worlds: Crafter
 **Plan2Explore** (without population diversity)
 <p align="center">
 <img src="/images/pp2e_crafter.gif" alt="pp2e_crafter" height=100px/>
-</p>
+</p> -->
 
-<h4 align="center">
+<!-- <h4 align="center">
 Exploring Behaviors: Walker
-</h4>
+</h4> -->
 **CASCADE**
 <p align="right">
 <img src="/images/cascade_walker.gif" alt="cascade_walker" height=100px/>
@@ -152,7 +152,7 @@ Exploring Behaviors: Walker
 <h3 align="center">
 	Zero-shot Performance
 </h3>
-Finally, we test whether the learned world models are general enough to facilitate learning downstream policies for previously unknown tasks in a zero-shot fashion as follows: 
+We test whether the learned world models are general enough to facilitate learning downstream policies for previously unknown tasks in a zero-shot fashion as follows: 
 1. We provide reward labels to the world model; 
 2. We train a separate reward head; 
 3. We train a task specific behavior policy and test it in the environment. 
