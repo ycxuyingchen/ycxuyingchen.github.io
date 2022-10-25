@@ -73,10 +73,10 @@ Learning General World Models in a Handful of Reward-Free Deployments
 	<strong>NeurIPS 2022</strong>
 </h5>
 
-<!-- <center>
-	<a href="https://github.com/ycxuyingchen/cascade">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                
-<a href="https://github.com/ycxuyingchen/cascade">[Code]</a>
-</center> -->
+<center>
+	<a href="https://arxiv.org/abs/2210.12719">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                
+<a href="https://github.com/facebookresearch/cascade">[Code]</a>
+</center>
 
 <h2 align="center">
 Abstract
