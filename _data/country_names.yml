@@ -572,7 +572,7 @@
 -
   index: 'map_115'
   country_name: 'NEW ZEALAND'
-  visited: false
+  visited: true
 
 -
   index: 'map_116'
