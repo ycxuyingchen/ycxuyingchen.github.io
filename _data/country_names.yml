@@ -37,7 +37,7 @@
 -
   index: 'map_8'
   country_name: 'AUSTRALIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_9'
@@ -132,7 +132,7 @@
 -
   index: 'map_27'
   country_name: 'CAMBODIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_28'
@@ -492,7 +492,7 @@
 -
   index: 'map_99'
   country_name: 'MALAYSIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_100'
@@ -702,7 +702,7 @@
 -
   index: 'map_141'
   country_name: 'SINGAPORE'
-  visited: false
+  visited: true
 
 -
   index: 'map_142'
