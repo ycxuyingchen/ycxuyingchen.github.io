@@ -4,7 +4,7 @@ permalink: /travel/
 order: 2
 ---
 
-I've been to :cn: :us: :canada: :uk: :jp: :kr: :mexico: :thailand: :fr: :de: :belgium: :netherlands: :es: :portugal: :it: :vatican_city: :bulgaria: :palau: :bolivia: :peru: :costa_rica: :malta: :tr: :greece: :sweden: :macedonia: :serbia: :montenegro: :kosovo: :poland: :finland: :estonia: :hungary: :austria: :slovakia: :czech_republic: :new_zealand: :australia: :malaysia: :singapore: :cambodia:
+I've been to :cn: :us: :canada: :uk: :jp: :kr: :mexico: :thailand: :fr: :de: :belgium: :netherlands: :es: :portugal: :it: :vatican_city: :bulgaria: :palau: :bolivia: :peru: :costa_rica: :malta: :tr: :greece: :sweden: :macedonia: :serbia: :montenegro: :kosovo: :poland: :finland: :estonia: :hungary: :austria: :slovakia: :czech_republic: :new_zealand: :australia: :malaysia: :singapore: :cambodia: :morocco:
 
 <head>
 <link rel="stylesheet" href="../assets/custom.css"/>

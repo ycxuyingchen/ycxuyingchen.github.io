@@ -542,7 +542,7 @@
 -
   index: 'map_109'
   country_name: 'MOROCCO'
-  visited: false
+  visited: true
 
 -
   index: 'map_110'
