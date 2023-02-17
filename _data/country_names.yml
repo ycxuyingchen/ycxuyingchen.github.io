@@ -382,7 +382,7 @@
 -
   index: 'map_77'
   country_name: 'ISREAL'
-  visited: false
+  visited: true
 
 -
   index: 'map_78'
@@ -402,7 +402,7 @@
 -
   index: 'map_81'
   country_name: 'JORDAN'
-  visited: false
+  visited: true
 
 -
   index: 'map_82'
