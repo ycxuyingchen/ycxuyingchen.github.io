@@ -217,7 +217,7 @@
 -
   index: 'map_44'
   country_name: 'DENMARK'
-  visited: false
+  visited: true
 
 -
   index: 'map_45'
@@ -527,7 +527,7 @@
 -
   index: 'map_106'
   country_name: 'MOLDOVA'
-  visited: false
+  visited: true
 
 -
   index: 'map_107'
@@ -662,7 +662,7 @@
 -
   index: 'map_133'
   country_name: 'ROMANIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_134'
