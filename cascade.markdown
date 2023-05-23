@@ -60,7 +60,7 @@ Learning General World Models in a Handful of Reward-Free Deployments
 <div class="inline">Oleh Rybkin<br>(UPenn)</div>  
 <br>
 
-<div class="inline">Stephen J. Robertsbr<br>(Oxford)</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+<div class="inline">Stephen J. Roberts<br>(Oxford)</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
 <div class="inline">Tim Rocktäschel<br>(UCL)</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
 <div class="inline">Edward Grefenstette<br>(UCL, Cohere)</div>
 </h5>
