@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /travel/
+# permalink: /travel/
 order: 2
 ---
 

@@ -18,6 +18,9 @@ Before starting my PhD, I studied CS and Math at Rice University and also spent 
 
 <!-- :mortar_board:[Google Scholar Profile](https://scholar.google.com/citations?user=-CqyjXEAAAAJ&hl=en) -->
 
+R. Chitnis, **Y. Xu**, B. Hashemi, L. Lehnert, U. Dogan, Z. Zhu, O. Delalleau (2023). **[IQL-TD-MPC: Implicit Q-Learning for Hierarchical Model Predictive Control](https://arxiv.org/abs/2306.00867)**. arXiv.
+
+
 **Y. Xu**, J. Parker-Holder, A. Pacchiano, P. J. Ball, O. Rybkin, S. J. Roberts, T. Rocktäschel, E. Grefenstette (2022). **[Learning General World Models in a Handful of Reward-Free Deployments]({% link cascade.markdown %})**. In NeurIPS.
 
 B. Chen, **Y. Xu**, A. Shrivastava (2019). **[LGD: Fast and Accurate Stochastic Gradient Estimation](https://papers.nips.cc/paper/2019/hash/a1e865a9b1065392ed6035d8ccd072d9-Abstract.html)**. In NeurIPS.
