@@ -377,7 +377,7 @@
 -
   index: 'map_76'
   country_name: 'IRELAND'
-  visited: false
+  visited: true
 
 -
   index: 'map_77'
