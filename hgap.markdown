@@ -192,7 +192,7 @@ H-GAP with MPC planning can achieve sensible performance on a wide range of down
     <img src ="/gifs/speed_2.gif" height="230" width="230">
 </div>
 <div class="inline">
-    <img src ="/gifs/speed_2.gif" height="230" width="230">
+    <img src ="/gifs/speed_3.gif" height="230" width="230">
 </div>
 
 <br>
