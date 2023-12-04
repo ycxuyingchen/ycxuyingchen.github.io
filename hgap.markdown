@@ -80,7 +80,7 @@ H-GAP: Humanoid Control with <br>a Generalist Planner
 
 <center>
 	<a href="">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                
-<a href="">[Code]</a>
+<a href="">[Code coming soon]</a>
 </center>
 
 <p align="center">
@@ -97,6 +97,7 @@ We present Humanoid Generalist Autoencoding Planner (H-GAP), a state-action traj
 For 56 degrees of freedom humanoid, we empirically demonstrate that H-GAP learns to represent and generate a wide range of motor behaviours. Further, without any learning from online interactions, it can also flexibly transfer these behaviors to solve novel downstream control tasks via planning. Notably, H-GAP excels established MPC baselines that have access to the ground truth dynamics model, and is superior or comparable to offline RL methods trained for individual tasks.
 Finally, we do a series of empirical studies on the scaling properties of H-GAP, showing the potential for performance gains via additional data but not computing.
 
+---
 
 <h3 align="center">
 H-GAP Overview
@@ -175,7 +176,7 @@ The reference snippets are short, but H-GAP with greedy decoding can continue th
 <h3 align="center">
 Downstream Control
 </h3>
-To test H-GAP’s zero-shot control performance as a generalist model, we design a suite of six control tasks: speed, forward, backward, shift left, rotate and jump. H-GAP matches or beats offline RL methods trained individually for each task. It also outperforms MPC with access to true dynamics, showing benefits of learned action space.  For H-GAP*, discount on rewards are applied.
+To test H-GAP’s zero-shot control performance as a generalist model, we design a suite of six control tasks: speed, forward, backward, shift left, rotate and jump. H-GAP matches or beats offline RL methods trained individually for each task. It also outperforms MPC with access to true dynamics, showing benefits of learned action space. 
 <p align="center">
 <img src="/images/downstream_performance.jpg" alt="downstream" height=400px/>
 </p>
