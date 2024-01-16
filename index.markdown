@@ -23,7 +23,7 @@ Before starting my PhD, I studied CS and Math at Rice University and also spent 
 <img align="left" src="/images/hgap.jpg" width="150" height="80"  class="image" style="margin:0px 50px"/>
 **[H-GAP: Humanoid Control with a Generalist Planner]({% link hgap.markdown %})** \
 Z. Jiang\*, **Y. Xu**\*, N. Wagener, Y. Luo, M. Janner, E. Grefenstette, T. Rocktäschel, Y. Tian \
-arXiv 2023
+ICLR 2024 Spotlight
 
 &nbsp;
 
