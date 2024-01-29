@@ -30,7 +30,7 @@ ICLR 2024 Spotlight
 <img align="left" src="/images/iql_tdmpc.png" width="150" height="100"  class="image" style="margin:0px 50px"/>
 **[IQL-TD-MPC: Implicit Q-Learning for Hierarchical Model Predictive Control](https://arxiv.org/abs/2306.00867)** \
 R. Chitnis\*, **Y. Xu**\*, B. Hashemi, L. Lehnert, U. Dogan, Z. Zhu, O. Delalleau \
-arXiv 2023
+ICRA 2024
 
 &nbsp;
 
