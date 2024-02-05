@@ -32,7 +32,7 @@
 -
   index: 'map_7'
   country_name: 'ARMENIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_8'
@@ -47,7 +47,7 @@
 -
   index: 'map_10'
   country_name: 'AZERBAIJAN'
-  visited: false
+  visited: true
 
 -
   index: 'map_11'
@@ -57,7 +57,7 @@
 -
   index: 'map_12'
   country_name: 'BAHRAIN'
-  visited: false
+  visited: true
 
 -
   index: 'map_13'
@@ -292,7 +292,7 @@
 -
   index: 'map_59'
   country_name: 'GEORGIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_60'
@@ -602,12 +602,12 @@
 -
   index: 'map_121'
   country_name: 'OMAN'
-  visited: false
+  visited: true
 
 -
   index: 'map_122'
   country_name: 'PAKISTAN'
-  visited: false
+  visited: true
 
 -
   index: 'map_123'
@@ -657,7 +657,7 @@
 -
   index: 'map_132'
   country_name: 'QATAR'
-  visited: false
+  visited: true
 
 -
   index: 'map_133'
@@ -677,7 +677,7 @@
 -
   index: 'map_136'
   country_name: 'SAUDI ARABIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_137'
@@ -847,7 +847,7 @@
 -
   index: 'map_170'
   country_name: 'UNITED ARAB EMIRATES'
-  visited: false
+  visited: true
 
 -
   index: 'map_171'
@@ -867,7 +867,7 @@
 -
   index: 'map_174'
   country_name: 'UZBEKISTAN'
-  visited: false
+  visited: true
 
 -
   index: 'map_175'
