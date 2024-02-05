@@ -597,7 +597,7 @@
 -
   index: 'map_120'
   country_name: 'NORWAY'
-  visited: false
+  visited: true
 
 -
   index: 'map_121'
