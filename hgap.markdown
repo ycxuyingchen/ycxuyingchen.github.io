@@ -75,7 +75,7 @@ H-GAP: Humanoid Control with <br>a Generalist Planner
 </h6> -->
 
 <h5 align="center">
-	<strong>Under Review</strong>
+	<strong>:sparkles: ICLR 2024 Spotlight :sparkles:</strong>
 </h5>
 
 <center>
