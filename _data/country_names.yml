@@ -472,7 +472,7 @@
 -
   index: 'map_95'
   country_name: 'LUXEMBOURG'
-  visited: false
+  visited: true
 
 -
   index: 'map_96'
