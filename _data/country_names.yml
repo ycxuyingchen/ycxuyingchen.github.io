@@ -712,7 +712,7 @@
 -
   index: 'map_143'
   country_name: 'SLOVENIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_144'
