@@ -772,7 +772,7 @@
 -
   index: 'map_155'
   country_name: 'SWITZERLAND'
-  visited: false
+  visited: true
 
 -
   index: 'map_156'
