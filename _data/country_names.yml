@@ -437,7 +437,7 @@
 -
   index: 'map_88'
   country_name: 'LATVIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_89'
@@ -467,7 +467,7 @@
 -
   index: 'map_94'
   country_name: 'LITHUANIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_95'
