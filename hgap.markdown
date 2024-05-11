@@ -81,7 +81,7 @@ H-GAP: Humanoid Control with <br>a Generalist Planner
 <center>
 	<a href="https://arxiv.org/abs/2312.02682">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                
 <a href="https://github.com/facebookresearch/hgap">[Code]</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="/images/h_gap_better_54_x_36_iclr.png"> [Poster]</a>
+<a href="/images/h_gap_better_54_x_36_iclr.png"> [Poster]</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://twitter.com/YingchenX/status/1732429478129762610"> [Twitter]</a>
 </center>
 
