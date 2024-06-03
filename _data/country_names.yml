@@ -612,7 +612,7 @@
 -
   index: 'map_123'
   country_name: 'PALESTINE'
-  visited: false
+  visited: true
 
 -
   index: 'map_124'
@@ -667,7 +667,7 @@
 -
   index: 'map_134'
   country_name: 'RUSSIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_135'
