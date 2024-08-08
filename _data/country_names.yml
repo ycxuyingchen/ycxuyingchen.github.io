@@ -97,7 +97,7 @@
 -
   index: 'map_20'
   country_name: 'BOSNIA AND HERZEGOVINA'
-  visited: false
+  visited: true
 
 -
   index: 'map_21'
@@ -187,7 +187,7 @@
 -
   index: 'map_38'
   country_name: 'CROATIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_39'
@@ -462,7 +462,7 @@
 -
   index: 'map_93'
   country_name: 'LIECHTENSTEIN'
-  visited: false
+  visited: true
 
 -
   index: 'map_94'
