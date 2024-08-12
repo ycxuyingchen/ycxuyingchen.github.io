@@ -7,7 +7,7 @@
 -
   index: 'map_2'
   country_name: 'ALBANIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_3'
