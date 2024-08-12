@@ -4,7 +4,7 @@ layout: page
 order: 2
 ---
 
-I've been to 69 countries :cn: :us: :canada: :uk: :jp: :kr: :mexico: :thailand: :fr: :de: :belgium: :netherlands: :es: :portugal: :it: :vatican_city: :bulgaria: :palau: :bolivia: :peru: :costa_rica: :malta: :tr: :greece: :sweden: :macedonia: :serbia: :montenegro: :kosovo: :poland: :finland: :estonia: :hungary: :austria: :slovakia: :czech_republic: :new_zealand: :australia: :malaysia: :singapore: :cambodia: :morocco: :israel: :palestinian_territories: :jordan: :moldova: :romania: :denmark: :norway: :azerbaijan: :georgia: :armenia: :bahrain: :united_arab_emirates: :oman: :qatar: :saudi_arabia: :pakistan: :uzbekistan: :luxembourg: :slovenia: :switzerland: :latvia: :lithuania: :ru: :liechtenstein: :san_marino: :croatia: :bosnia_herzegovina: :albania:
+I've been to 70 countries :cn: :us: :canada: :uk: :jp: :kr: :mexico: :thailand: :fr: :de: :belgium: :netherlands: :es: :portugal: :it: :vatican_city: :bulgaria: :palau: :bolivia: :peru: :costa_rica: :malta: :tr: :greece: :sweden: :macedonia: :serbia: :montenegro: :kosovo: :poland: :finland: :estonia: :hungary: :austria: :slovakia: :czech_republic: :new_zealand: :australia: :malaysia: :singapore: :cambodia: :morocco: :israel: :palestinian_territories: :jordan: :moldova: :romania: :denmark: :norway: :azerbaijan: :georgia: :armenia: :bahrain: :united_arab_emirates: :oman: :qatar: :saudi_arabia: :pakistan: :uzbekistan: :luxembourg: :slovenia: :switzerland: :latvia: :lithuania: :ru: :liechtenstein: :san_marino: :croatia: :bosnia_herzegovina: :albania:
 
 <head>
 <link rel="stylesheet" href="../assets/custom.css"/>
