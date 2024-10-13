@@ -27,7 +27,7 @@
 -
   index: 'map_6'
   country_name: 'ARGENTINA'
-  visited: false
+  visited: true
 
 -
   index: 'map_7'
@@ -157,7 +157,7 @@
 -
   index: 'map_32'
   country_name: 'CHILE'
-  visited: false
+  visited: true
 
 -
   index: 'map_33'
@@ -617,7 +617,7 @@
 -
   index: 'map_124'
   country_name: 'PANAMA'
-  visited: false
+  visited: true
 
 -
   index: 'map_125'
@@ -862,7 +862,7 @@
 -
   index: 'map_173'
   country_name: 'URUGUAY'
-  visited: false
+  visited: true
 
 -
   index: 'map_174'
