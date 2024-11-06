@@ -352,7 +352,7 @@
 -
   index: 'map_71'
   country_name: 'ICELAND'
-  visited: false
+  visited: true
 
 -
   index: 'map_72'
