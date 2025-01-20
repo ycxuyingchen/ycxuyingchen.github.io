@@ -7,7 +7,7 @@
 -
   index: 'map_2'
   country_name: 'ALBANIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_3'
@@ -27,7 +27,7 @@
 -
   index: 'map_6'
   country_name: 'ARGENTINA'
-  visited: false
+  visited: true
 
 -
   index: 'map_7'
@@ -97,7 +97,7 @@
 -
   index: 'map_20'
   country_name: 'BOSNIA AND HERZEGOVINA'
-  visited: false
+  visited: true
 
 -
   index: 'map_21'
@@ -157,7 +157,7 @@
 -
   index: 'map_32'
   country_name: 'CHILE'
-  visited: false
+  visited: true
 
 -
   index: 'map_33'
@@ -187,7 +187,7 @@
 -
   index: 'map_38'
   country_name: 'CROATIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_39'
@@ -352,7 +352,7 @@
 -
   index: 'map_71'
   country_name: 'ICELAND'
-  visited: false
+  visited: true
 
 -
   index: 'map_72'
@@ -437,7 +437,7 @@
 -
   index: 'map_88'
   country_name: 'LATVIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_89'
@@ -462,12 +462,12 @@
 -
   index: 'map_93'
   country_name: 'LIECHTENSTEIN'
-  visited: false
+  visited: true
 
 -
   index: 'map_94'
   country_name: 'LITHUANIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_95'
@@ -612,12 +612,12 @@
 -
   index: 'map_123'
   country_name: 'PALESTINE'
-  visited: false
+  visited: true
 
 -
   index: 'map_124'
   country_name: 'PANAMA'
-  visited: false
+  visited: true
 
 -
   index: 'map_125'
@@ -667,7 +667,7 @@
 -
   index: 'map_134'
   country_name: 'RUSSIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_135'
@@ -772,7 +772,7 @@
 -
   index: 'map_155'
   country_name: 'SWITZERLAND'
-  visited: false
+  visited: true
 
 -
   index: 'map_156'
@@ -862,7 +862,7 @@
 -
   index: 'map_173'
   country_name: 'URUGUAY'
-  visited: false
+  visited: true
 
 -
   index: 'map_174'
