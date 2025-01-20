@@ -20,6 +20,13 @@ Before starting my PhD, I studied CS and Math at Rice University and also spent 
 
 <!-- :mortar_board:[Google Scholar Profile](https://scholar.google.com/citations?user=-CqyjXEAAAAJ&hl=en) -->
 
+<img align="left" src="/images/metamotivo.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
+**[Meta Motivo: Zero-Shot Whole-Body Humanoid Control via Behavioral Foundation Models](https://metamotivo.metademolab.com/)** \
+A. Tirinzoni, A. Touati, J. Farebrother, M. Guzek, A. Kanervisto, **Y. Xu**, A. Lazaric, M. Pirotta \
+Under Review
+
+&nbsp;
+
 <img align="left" src="/images/hgap.jpg" width="150" height="80"  class="image" style="margin:0px 50px"/>
 **[H-GAP: Humanoid Control with a Generalist Planner]({% link hgap.markdown %})** \
 Z. Jiang\*, **Y. Xu**\*, N. Wagener, Y. Luo, M. Janner, E. Grefenstette, T. Rocktäschel, Y. Tian \
