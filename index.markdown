@@ -8,7 +8,7 @@ order: 0
 <img src="/images/yingchen.png" alt="Yingchen Xu" width="200" style="border-radius:50%"/>
 </p>
 
-I am a 4th year CS PhD student at University College London (UCL) supervised by [Edward Grefenstette](https://www.egrefen.com/) and [Tim Rocktäschel](https://rockt.github.io/), as well as a PhD Researcher at [FAIR London](https://ai.facebook.com/). My research focuses on deep reinforcement learning, world models, and reasoning with LLMs.
+I am a 4th year CS PhD student at University College London (UCL) supervised by [Edward Grefenstette](https://www.egrefen.com/) and [Tim Rocktäschel](https://rockt.github.io/), as well as a PhD Researcher at [FAIR London](https://ai.facebook.com/). My research focuses on **deep reinforcement learning**, **world models**, and **LLM reasoning**.
 
 Before starting my PhD, I studied CS and Math at Rice University and also spent some time working on applied ML in the bay area. 
 
