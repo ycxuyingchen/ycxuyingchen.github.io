@@ -27,6 +27,14 @@ Under Review
 
 &nbsp;
 
+<img align="left" src="/images/fast_adaptation.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
+**[Fast Adaptation with Behavioral Foundation
+Models](https://arxiv.org/abs/2504.07896)** \
+H. Sikchi, A. Tirinzoni, A. Touati, **Y. Xu**, A. Kanervisto, S. Niekum, A. Zhang, A. Lazaric, M. Pirotta   \
+Under Review
+
+&nbsp;
+
 <img align="left" src="/images/metamotivo.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
 **[Meta Motivo: Zero-Shot Whole-Body Humanoid Control via Behavioral Foundation Models](https://metamotivo.metademolab.com/)** \
 A. Tirinzoni, A. Touati, J. Farebrother, M. Guzek, A. Kanervisto, **Y. Xu**, A. Lazaric, M. Pirotta \

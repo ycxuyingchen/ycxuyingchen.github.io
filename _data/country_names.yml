@@ -877,7 +877,7 @@
 -
   index: 'map_176'
   country_name: 'VIETNAM'
-  visited: false
+  visited: true
 
 -
   index: 'map_177'
