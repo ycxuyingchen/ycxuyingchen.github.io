@@ -362,7 +362,7 @@
 -
   index: 'map_73'
   country_name: 'INDONESIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_74'

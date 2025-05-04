@@ -23,7 +23,7 @@ Before starting my PhD, I studied CS and Math at Rice University and also spent 
 <img align="left" src="/images/token_assorted.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
 **[Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning](https://arxiv.org/abs/2502.03275)** \
 D. Su, H. Zhu, **Y. Xu**, J. Jiao, Y. Tian, Q. Zheng \
-Under Review
+ICML 2025
 
 &nbsp;
 
@@ -31,7 +31,7 @@ Under Review
 **[Fast Adaptation with Behavioral Foundation
 Models](https://arxiv.org/abs/2504.07896)** \
 H. Sikchi, A. Tirinzoni, A. Touati, **Y. Xu**, A. Kanervisto, S. Niekum, A. Zhang, A. Lazaric, M. Pirotta   \
-Under Review
+RLC 2025
 
 &nbsp;
 
