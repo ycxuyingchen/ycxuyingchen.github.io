@@ -12,6 +12,8 @@ I am a 4th year CS PhD student at University College London (UCL) supervised by 
 
 Before starting my PhD, I studied CS and Math at Rice University and also spent some time working on applied ML in the bay area. 
 
+[CV](https://ycxuyingchen.github.io/cv_202505_yingchen_xu.pdf) \| [Research Statement](https://ycxuyingchen.github.io/research_statement_yingchen_xu.pdf)
+
 &nbsp;
 &nbsp;
 &nbsp;
