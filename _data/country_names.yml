@@ -237,7 +237,7 @@
 -
   index: 'map_48'
   country_name: 'EGYPT'
-  visited: false
+  visited: true
 
 -
   index: 'map_49'
