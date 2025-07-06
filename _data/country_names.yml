@@ -197,7 +197,7 @@
 -
   index: 'map_40'
   country_name: 'CYPRUS'
-  visited: false
+  visited: true
 
 -
   index: 'map_41'
@@ -407,7 +407,7 @@
 -
   index: 'map_82'
   country_name: 'KAZAKHSTAN'
-  visited: false
+  visited: true
 
 -
   index: 'map_83'
@@ -427,7 +427,7 @@
 -
   index: 'map_86'
   country_name: 'KYRGYZSTAN'
-  visited: false
+  visited: true
 
 -
   index: 'map_87'
