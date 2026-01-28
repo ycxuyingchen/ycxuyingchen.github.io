@@ -14,17 +14,16 @@ Before starting my PhD, I studied CS and Math at Rice University and also spent 
 
 [CV](https://ycxuyingchen.github.io/cv_yingchenxu_202512.pdf) \| [Research Statement](https://ycxuyingchen.github.io/research_statement_yingchen_xu.pdf)
 
-&nbsp;
-&nbsp;
-&nbsp;
 
 ---
 
 ### Research Vision
 
-I’m interested in how learning systems can build internal models of the world that they can actually *use*—to reason about alternatives, plan under uncertainty, and decide what to do next. Rather than treating intelligence as predicting the next observation or optimizing a fixed objective, my work focuses on **world models that support inference under intervention**: answering “what would happen if…?” questions and reusing prior knowledge when goals or environments change.
+I’m interested in how learning systems can build internal models of the world that they can **actually use**—to reason about alternatives, plan under uncertainty, and decide what to do next.
 
-Across domains ranging from embodied control to language reasoning, I study what structure a learned world model needs in order to support planning, reuse across tasks, and efficient learning from limited, biased, and actively acquired experience. Ultimately, I aim to develop agents that generalize not through brute-force scaling or repeated retraining, but by learning internal beliefs about how actions shape the world—and using those beliefs to guide both action and learning.
+Rather than treating intelligence as predicting the next observation, my work focuses on world models that support **inference under intervention**: answering “what would happen if…?” questions and reusing prior knowledge when goals or environments change.
+
+Across domains ranging from **embodied control** to **language reasoning**, I aim to develop agents that generalize not through brute-force scaling, but by learning **internal beliefs about how actions shape the world**.
 
 ---
 
