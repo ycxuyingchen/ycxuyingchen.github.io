@@ -12,6 +12,11 @@ I am a 4th year CS PhD student at University College London (UCL) supervised by 
 
 Before starting my PhD, I studied CS and Math at Rice University and also spent some time working on applied ML in the bay area. 
 
+[CV](https://ycxuyingchen.github.io/cv_yingchenxu_202512.pdf) \| [Research Statement](https://ycxuyingchen.github.io/research_statement_yingchen_xu.pdf)
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 ---
 
@@ -22,13 +27,6 @@ I’m interested in how learning systems can build internal models of the world 
 Across domains ranging from embodied control to language reasoning, I study what structure a learned world model needs in order to support planning, reuse across tasks, and efficient learning from limited, biased, and actively acquired experience. Ultimately, I aim to develop agents that generalize not through brute-force scaling or repeated retraining, but by learning internal beliefs about how actions shape the world—and using those beliefs to guide both action and learning.
 
 ---
-
-
-[CV](https://ycxuyingchen.github.io/cv_yingchenxu_202512.pdf) \| [Research Statement](https://ycxuyingchen.github.io/research_statement_yingchen_xu.pdf)
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ## Publications
 
