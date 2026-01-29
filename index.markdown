@@ -19,11 +19,10 @@ Before starting my PhD, I studied CS and Math at Rice University and also spent 
 
 ### Research Vision
 
-I’m interested in how learning systems can build internal models of the world that they can **actually use**—to reason about alternatives, plan under uncertainty, and decide what to do next.
+My research studies how learning systems can acquire **internal models of the world** that support reasoning, planning, and generalization from limited experience. Humans do this naturally, whereas many modern learning systems—despite impressive gains from large-scale optimization—remain fragile when observations are partial, interaction is expensive, or task objectives change.
 
-Rather than treating intelligence as predicting the next observation, my work focuses on world models that support **inference under intervention**: answering “what would happen if…?” questions and reusing prior knowledge when goals or environments change.
+I focus on **world models** as a framework for understanding this gap, particularly in settings where information is limited, costly, or biased. Much of my work addresses the practical bottlenecks that arise when world models are used for decision-making in realistic environments, including data collection without rewards, long-horizon reasoning, and high-dimensional control. More broadly, I am interested in how learning under **information constraints** shapes the representations that models acquire, and how this can lead to improved robustness, generalization, and sample efficiency.
 
-Across domains ranging from **embodied control** to **language reasoning**, I aim to develop agents that generalize not through brute-force scaling, but by learning **internal beliefs about how actions shape the world**.
 
 ---
 
