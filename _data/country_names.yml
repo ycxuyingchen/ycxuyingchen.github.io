@@ -87,7 +87,7 @@
 -
   index: 'map_18'
   country_name: 'BHUTAN'
-  visited: false
+  visited: true
 
 -
   index: 'map_19'
@@ -562,7 +562,7 @@
 -
   index: 'map_113'
   country_name: 'NEPAL'
-  visited: false
+  visited: true
 
 -
   index: 'map_114'
