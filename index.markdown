@@ -14,7 +14,7 @@ My research focuses on **deep reinforcement learning**, **world models**, and **
 
 Before my PhD, I studied CS and Math at Rice University, where I had the opportunity to work with [Anshumali Shrivastava](https://www.cs.rice.edu/~as143/) and [Beidi Chen](https://www.andrew.cmu.edu/user/beidic/). I also spent time as an ML engineer at Airbnb, and briefly explored computational cognitive science at Stanford [Causality in Cognition Lab](https://cicl.stanford.edu/) with [Tobias Gerstenberg](https://cicl.stanford.edu/member/tobias_gerstenberg/). These experiences shaped my interest in intelligence from multiple angles: learning, reasoning, decision-making, and human cognition.
 
-[CV](https://ycxuyingchen.github.io/cv_yingchen_xu_202603.pdf) \| [Research Statement](https://ycxuyingchen.github.io/research_statement_202601.pdf)
+[CV](https://ycxuyingchen.github.io/cv_yingchen_xu_202609.pdf) \| [Research Statement](https://ycxuyingchen.github.io/research_statement_202601.pdf)
 
 
 ---
