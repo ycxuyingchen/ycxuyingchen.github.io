@@ -36,7 +36,7 @@ I focus on **world models** as a framework for understanding this gap, particula
 <!-- :mortar_board:[Google Scholar Profile](https://scholar.google.com/citations?user=-CqyjXEAAAAJ&hl=en) -->
 
 <img align="left" src="/images/sparse_planning.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
-**Sparse Planning in Visual World Models via Cost Gradients** \
+**[Sparse Planning in Visual World Models via Cost Gradients](/costgrad/)** \
 **Y. Xu**, E. Grefenstette \
 NeurIPS 2026
 
