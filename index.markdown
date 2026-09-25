@@ -32,6 +32,13 @@ I focus on **world models** as a framework for understanding this gap, particula
 
 <!-- :mortar_board:[Google Scholar Profile](https://scholar.google.com/citations?user=-CqyjXEAAAAJ&hl=en) -->
 
+<img align="left" src="/images/sparse_planning.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
+**Sparse Planning in Visual World Models via Cost Gradients** \
+**Y. Xu**, E. Grefenstette \
+NeurIPS 2026
+
+&nbsp;
+
 <img align="left" src="/images/token_assorted.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
 **[Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning](https://arxiv.org/abs/2502.03275)** \
 D. Su, H. Zhu, **Y. Xu**, J. Jiao, Y. Tian, Q. Zheng \
