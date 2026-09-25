@@ -19,11 +19,14 @@ Before my PhD, I studied CS and Math at Rice University, where I had the opportu
 
 ---
 
-### Research Vision
+<details class="research-vision" markdown="1">
+<summary><h3 id="research-vision">Research Vision</h3></summary>
 
 My research studies how learning systems can acquire **internal models of the world** that support reasoning, planning, and generalization from limited experience. Humans do this naturally, whereas many modern learning systems—despite impressive gains from large-scale optimization—remain fragile when observations are partial, interaction is expensive, or task objectives change.
 
 I focus on **world models** as a framework for understanding this gap, particularly in settings where information is limited, costly, or biased. Much of my work addresses the practical bottlenecks that arise when world models are used for decision-making in realistic environments, including data collection without rewards, long-horizon reasoning, and high-dimensional control. More broadly, I am interested in how learning under **information constraints** shapes the representations that models acquire, and how this can lead to improved robustness, generalization, and sample efficiency.
+
+</details>
 
 
 ---
