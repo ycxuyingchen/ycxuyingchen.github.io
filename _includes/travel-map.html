@@ -1,0 +1,15 @@
+<svg id="travel-map" viewBox="0 0 1000 500" role="img" aria-labelledby="map-title map-description">
+  <title id="map-title">Places I’ve visited</title>
+  <desc id="map-description">Visited places are blue. A marker indicates Guangzhou, China, my hometown. The complete list of visited places follows the map.</desc>
+  {% for country in site.data.world_map %}
+    {% assign place = site.data.travel | where: 'map_id', country.id | first %}
+    <path id="{{ country.id }}" class="map-country{% if place %} is-visited{% endif %}" data-name="{{ country.name | escape }}" data-visited="{% if place %}true{% else %}false{% endif %}" d="{{ country.d }}" vector-effect="non-scaling-stroke"><title>{{ country.name | escape }}{% if place %} — Visited{% endif %}</title></path>
+  {% endfor %}
+  {% for place in site.data.travel %}
+    {% if place.x %}
+    <circle id="{{ place.map_id }}" class="map-country is-visited map-small-place" data-name="{{ place.name | escape }}" data-visited="true" cx="{{ place.x }}" cy="{{ place.y }}" r="2.3" vector-effect="non-scaling-stroke"><title>{{ place.name | escape }} — Visited</title></circle>
+    {% endif %}
+  {% endfor %}
+  <circle class="hometown-halo" cx="805" cy="210" r="8" />
+  <circle class="hometown-pin" cx="805" cy="210" r="3.5"><title>Guangzhou, China — Hometown</title></circle>
+</svg>

@@ -1,98 +1,155 @@
 ---
-layout: page
+layout: profile
 order: 0
 ---
 
+<section class="profile-intro" aria-labelledby="profile-name" markdown="1">
+<div class="profile-intro-copy" markdown="1">
+# Yingchen Xu
+{: #profile-name }
 
-<p align="center">
-<img src="/images/yingchen.png" alt="Yingchen Xu" width="200" style="border-radius:50%"/>
-</p>
+I study how agents learn models of the world to reason, plan, and generalize from limited experience. My work spans **world models**, **deep reinforcement learning**, and **LLM reasoning**.
 
-I recently completed my PhD in Computer Science at University College London (UCL), where I was part of the [UCL DARK Lab](https://ucldark.com/) (now part of [BOLD](https://bold-lab.ai/)) and was advised by [Edward Grefenstette](https://www.egrefen.com/) and [Tim Rocktäschel](https://rockt.github.io/). During my PhD, I was also very fortunate to spend four amazing years at [FAIR London](https://ai.facebook.com/), working with [Yuandong Tian](https://yuandong-tian.com/), [Matteo Pirotta](https://teopir.github.io/) and [Alessandro Lazaric](https://scholar.google.com/citations?user=6JZ3R6wAAAAJ&hl=en). I also had a wonderful time at [Sakana AI](https://sakana.ai/) in Tokyo, working with [Luke Darlow](https://lukedarlow.github.io/) on active-vision world models.
+<div class="profile-links">
+<a class="primary-link" href="{{ '/cv_yingchen_xu_202609.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a>
+<a href="{{ '/research_statement_202601.pdf' | relative_url }}">Research statement <span aria-hidden="true">↗</span></a>
+<a href="mailto:{{ site.author.email }}">Email <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+<div class="profile-photo"><img class="profile-portrait" src="{{ '/images/yingchen.png' | relative_url }}" alt="Yingchen Xu" width="184" height="184"></div>
+</section>
 
-My research focuses on **deep reinforcement learning**, **world models**, and **LLM reasoning**. Broadly, I am excited by the question of how intelligent agents can learn useful models of the world — models that support reasoning, planning, control, and generalization from limited experience.
+<section class="profile-about" id="about" aria-labelledby="about-heading" markdown="1">
+## About
+{: #about-heading .section-heading }
 
-Before my PhD, I studied CS and Math at Rice University, where I had the opportunity to work with [Anshumali Shrivastava](https://www.cs.rice.edu/~as143/) and [Beidi Chen](https://www.andrew.cmu.edu/user/beidic/). I also spent time as an ML engineer at Airbnb, and briefly explored computational cognitive science at Stanford [Causality in Cognition Lab](https://cicl.stanford.edu/) with [Tobias Gerstenberg](https://cicl.stanford.edu/member/tobias_gerstenberg/). These experiences shaped my interest in intelligence from multiple angles: learning, reasoning, decision-making, and human cognition.
+I completed my PhD in Computer Science at UCL's [DARK Lab](https://ucldark.com/) (now part of [BOLD](https://bold-lab.ai/)), advised by [Edward Grefenstette](https://www.egrefen.com/) and [Tim Rocktäschel](https://rockt.github.io/). I spent four years at [FAIR London](https://ai.facebook.com/), working with [Yuandong Tian](https://yuandong-tian.com/), [Matteo Pirotta](https://teopir.github.io/), and [Alessandro Lazaric](https://scholar.google.com/citations?user=6JZ3R6wAAAAJ&hl=en), and worked on active-vision world models with [Luke Darlow](https://lukedarlow.github.io/) at [Sakana AI](https://sakana.ai/).
 
-[CV](https://ycxuyingchen.github.io/cv_yingchen_xu_202609.pdf) \| [Research Statement](https://ycxuyingchen.github.io/research_statement_202601.pdf)
+Previously, I studied CS and Math at Rice University, working with [Anshumali Shrivastava](https://www.cs.rice.edu/~as143/) and [Beidi Chen](https://www.andrew.cmu.edu/user/beidic/). I also worked as an ML engineer at Airbnb and explored computational cognitive science with [Tobias Gerstenberg](https://cicl.stanford.edu/member/tobias_gerstenberg/) at Stanford's [Causality in Cognition Lab](https://cicl.stanford.edu/).
 
+</section>
 
----
-
-<details class="research-vision" markdown="1">
-<summary><h3 id="research-vision">Research Vision</h3></summary>
-
-My research studies how learning systems can acquire **internal models of the world** that support reasoning, planning, and generalization from limited experience. Humans do this naturally, whereas many modern learning systems—despite impressive gains from large-scale optimization—remain fragile when observations are partial, interaction is expensive, or task objectives change.
-
-I focus on **world models** as a framework for understanding this gap, particularly in settings where information is limited, costly, or biased. Much of my work addresses the practical bottlenecks that arise when world models are used for decision-making in realistic environments, including data collection without rewards, long-horizon reasoning, and high-dimensional control. More broadly, I am interested in how learning under **information constraints** shapes the representations that models acquire, and how this can lead to improved robustness, generalization, and sample efficiency.
-
-</details>
-
-
----
-
+<section class="publications" id="publications" aria-labelledby="publications-heading" markdown="1">
 ## Publications
+{: #publications-heading .section-heading }
 
-<!-- :mortar_board:[Google Scholar Profile](https://scholar.google.com/citations?user=-CqyjXEAAAAJ&hl=en) -->
+<p class="publication-note">* Equal contribution.</p>
 
-<img align="left" src="/images/sparse_planning.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
-**[Sparse Planning in Visual World Models via Cost Gradients](/costgrad/)** \
-**Y. Xu**, E. Grefenstette \
-NeurIPS 2026
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/sparse_planning.png" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">NeurIPS 2026</p>
 
-&nbsp;
+### [Sparse Planning in Visual World Models via Cost Gradients](/costgrad/)
 
-<img align="left" src="/images/token_assorted.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
-**[Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning](https://arxiv.org/abs/2502.03275)** \
-D. Su, H. Zhu, **Y. Xu**, J. Jiao, Y. Tian, Q. Zheng \
-ICML 2025
+**Yingchen Xu**, Edward Grefenstette
+{: .publication-authors }
 
-&nbsp;
+</div>
+</article>
 
-<img align="left" src="/images/fast_adaptation.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
-**[Fast Adaptation with Behavioral Foundation
-Models](https://arxiv.org/abs/2504.07896)** \
-H. Sikchi, A. Tirinzoni, A. Touati, **Y. Xu**, A. Kanervisto, S. Niekum, A. Zhang, A. Lazaric, M. Pirotta   \
-RLC 2025
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/token_assorted.png" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">ICML 2025</p>
 
-&nbsp;
+### [Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning](https://arxiv.org/abs/2502.03275)
 
-<img align="left" src="/images/metamotivo.png" width="150" height="105"  class="image" style="margin:0px 50px"/>
-**[Meta Motivo: Zero-Shot Whole-Body Humanoid Control via Behavioral Foundation Models](https://metamotivo.metademolab.com/)** \
-A. Tirinzoni, A. Touati, J. Farebrother, M. Guzek, A. Kanervisto, **Y. Xu**, A. Lazaric, M. Pirotta \
-ICLR 2025
+DiJia Su, Hanlin Zhu\*, **Yingchen Xu**\*, Jiantao Jiao, Yuandong Tian, Qinqing Zheng
+{: .publication-authors }
 
-&nbsp;
+</div>
+</article>
 
-<img align="left" src="/images/hgap.jpg" width="150" height="80"  class="image" style="margin:0px 50px"/>
-**[H-GAP: Humanoid Control with a Generalist Planner]({% link hgap.markdown %})** \
-Z. Jiang\*, **Y. Xu**\*, N. Wagener, Y. Luo, M. Janner, E. Grefenstette, T. Rocktäschel, Y. Tian \
-ICLR 2024 Spotlight
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/fast_adaptation.png" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">RLC 2025</p>
 
-&nbsp;
+### [Fast Adaptation with Behavioral Foundation Models](https://arxiv.org/abs/2504.07896)
 
-<img align="left" src="/images/iql_tdmpc.png" width="150" height="100"  class="image" style="margin:0px 50px"/>
-**[IQL-TD-MPC: Implicit Q-Learning for Hierarchical Model Predictive Control](https://arxiv.org/abs/2306.00867)** \
-R. Chitnis\*, **Y. Xu**\*, B. Hashemi, L. Lehnert, U. Dogan, Z. Zhu, O. Delalleau \
-ICRA 2024
+Harshit Sikchi, Andrea Tirinzoni, Ahmed Touati, **Yingchen Xu**, Anssi Kanervisto, Scott Niekum, Amy Zhang, Alessandro Lazaric, Matteo Pirotta
+{: .publication-authors }
 
-&nbsp;
+</div>
+</article>
 
-<img align="left" src="/images/CASCADE_motivation.jpg" width="100" height="100" class="image" style="margin:0px 75px"/>
-**[Learning General World Models in a Handful of Reward-Free Deployments]({% link cascade.markdown %})** \
-**Y. Xu**\*, J. Parker-Holder\*, A. Pacchiano\*, P. J. Ball\*, O. Rybkin, S. J. Roberts, T. Rocktäschel, E. Grefenstette \
-NeurIPS 2022
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/metamotivo.png" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">ICLR 2025</p>
 
-&nbsp;
+### [Meta Motivo: Zero-Shot Whole-Body Humanoid Control via Behavioral Foundation Models](https://metamotivo.metademolab.com/)
 
-<img align="left" src="/images/lgd.png" width="150" height="70"  class="image" style="margin:0px 50px"/>
-**[LGD: Fast and Accurate Stochastic Gradient Estimation](https://papers.nips.cc/paper/2019/hash/a1e865a9b1065392ed6035d8ccd072d9-Abstract.html)** \
-B. Chen, **Y. Xu**, A. Shrivastava \
-NeurIPS 2019
+Andrea Tirinzoni, Ahmed Touati, Jesse Farebrother, Mateusz Guzek, Anssi Kanervisto, **Yingchen Xu**, Alessandro Lazaric, Matteo Pirotta
+{: .publication-authors }
 
-&nbsp;
+</div>
+</article>
 
-<img align="left" src="/images/plinko.png" width="100" height="100" class="image" style="margin:0px 75px"/>
-**[Looking into the past: Eye-tracking mental simulation in physical inference](https://escholarship.org/uc/item/7gk617ss)** \
-A. Beller, **Y. Xu**, S. Linderman, T. Gerstenberg \
-Cognitive Science 2022
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/hgap.jpg" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">ICLR 2024 Spotlight</p>
+
+### [H-GAP: Humanoid Control with a Generalist Planner]({% link hgap.markdown %})
+
+Zhengyao Jiang\*, **Yingchen Xu**\*, Nolan Wagener, Yicheng Luo, Michael Janner, Edward Grefenstette, Tim Rocktäschel, Yuandong Tian
+{: .publication-authors }
+
+</div>
+</article>
+
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/iql_tdmpc.png" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">ICRA 2024</p>
+
+### [IQL-TD-MPC: Implicit Q-Learning for Hierarchical Model Predictive Control](https://arxiv.org/abs/2306.00867)
+
+Rohan Chitnis\*, **Yingchen Xu**\*, Bobak Hashemi, Lucas Lehnert, Urun Dogan, Zheqing Zhu, Olivier Delalleau
+{: .publication-authors }
+
+</div>
+</article>
+
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/CASCADE_motivation.jpg" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">NeurIPS 2022</p>
+
+### [Learning General World Models in a Handful of Reward-Free Deployments]({% link cascade.markdown %})
+
+**Yingchen Xu**\*, Jack Parker-Holder\*, Aldo Pacchiano\*, Phillip J. Ball\*, Oleh Rybkin, Stephen J. Roberts, Tim Rocktäschel, Edward Grefenstette
+{: .publication-authors }
+
+</div>
+</article>
+
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/lgd.png" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">NeurIPS 2019</p>
+
+### [LGD: Fast and Accurate Stochastic Gradient Estimation](https://papers.nips.cc/paper/2019/hash/a1e865a9b1065392ed6035d8ccd072d9-Abstract.html)
+
+Beidi Chen, **Yingchen Xu**, Anshumali Shrivastava
+{: .publication-authors }
+
+</div>
+</article>
+
+<article class="publication" markdown="1">
+<div class="publication-image"><img src="/images/plinko.png" alt="" loading="lazy" width="168" height="112"></div>
+<div class="publication-body" markdown="1">
+<p class="publication-venue">Cognitive Science 2022</p>
+
+### [Looking into the past: Eye-tracking mental simulation in physical inference](https://escholarship.org/uc/item/7gk617ss)
+
+Ari Beller, **Yingchen Xu**, Scott Linderman, Tobias Gerstenberg
+{: .publication-authors }
+
+</div>
+</article>
+
+</section>

@@ -1,0 +1,357 @@
+- name: Albania
+  region: Europe
+  map_id: map_2
+
+- name: Argentina
+  region: South America
+  map_id: map_6
+
+- name: Armenia
+  region: Asia
+  map_id: map_7
+
+- name: Australia
+  region: Oceania
+  map_id: map_8
+
+- name: Austria
+  region: Europe
+  map_id: map_9
+
+- name: Azerbaijan
+  region: Asia
+  map_id: map_10
+
+- name: Bahrain
+  region: Asia
+  map_id: map_12
+
+- name: Belgium
+  region: Europe
+  map_id: map_15
+
+- name: Bhutan
+  region: Asia
+  map_id: map_18
+
+- name: Bolivia
+  region: South America
+  map_id: map_19
+
+- name: Bosnia and Herzegovina
+  region: Europe
+  map_id: map_20
+
+- name: Bulgaria
+  region: Europe
+  map_id: map_24
+
+- name: Cambodia
+  region: Asia
+  map_id: map_27
+
+- name: Canada
+  region: North America
+  map_id: map_29
+
+- name: Chile
+  region: South America
+  map_id: map_32
+
+- name: China
+  region: Asia
+  map_id: map_33
+
+- name: Costa Rica
+  region: North America
+  map_id: map_37
+
+- name: Croatia
+  region: Europe
+  map_id: map_38
+
+- name: Cyprus
+  region: Europe
+  map_id: map_40
+
+- name: Czech Republic
+  region: Europe
+  map_id: map_41
+
+- name: Denmark
+  region: Europe
+  map_id: map_44
+
+- name: Egypt
+  region: Africa
+  map_id: map_48
+
+- name: Estonia
+  region: Europe
+  map_id: map_52
+
+- name: Faroe Islands
+  region: Europe
+  map_id: faroe-islands
+  x: 442
+  y: 74
+
+- name: Finland
+  region: Europe
+  map_id: map_55
+
+- name: France
+  region: Europe
+  map_id: map_56
+
+- name: Georgia
+  region: Asia
+  map_id: map_59
+
+- name: Germany
+  region: Europe
+  map_id: map_60
+
+- name: Greece
+  region: Europe
+  map_id: map_62
+
+- name: Hungary
+  region: Europe
+  map_id: map_70
+
+- name: Iceland
+  region: Europe
+  map_id: map_71
+
+- name: Indonesia
+  region: Asia
+  map_id: map_73
+
+- name: Israel
+  region: Asia
+  map_id: map_77
+
+- name: Italy
+  region: Europe
+  map_id: map_78
+
+- name: Japan
+  region: Asia
+  map_id: map_80
+
+- name: Jordan
+  region: Asia
+  map_id: map_81
+
+- name: Kazakhstan
+  region: Asia
+  map_id: map_82
+
+- name: Kosovo
+  region: Europe
+  map_id: map_84
+
+- name: Kyrgyzstan
+  region: Asia
+  map_id: map_86
+
+- name: Latvia
+  region: Europe
+  map_id: map_88
+
+- name: Liechtenstein
+  region: Europe
+  map_id: map_93
+
+- name: Lithuania
+  region: Europe
+  map_id: map_94
+
+- name: Luxembourg
+  region: Europe
+  map_id: map_95
+
+- name: Malaysia
+  region: Asia
+  map_id: map_99
+
+- name: Malta
+  region: Europe
+  map_id: map_102
+
+- name: Mexico
+  region: North America
+  map_id: map_105
+
+- name: Moldova
+  region: Europe
+  map_id: map_106
+
+- name: Monaco
+  region: Europe
+  map_id: monaco
+  x: 479
+  y: 136
+
+- name: Montenegro
+  region: Europe
+  map_id: map_108
+
+- name: Morocco
+  region: Africa
+  map_id: map_109
+
+- name: Nepal
+  region: Asia
+  map_id: map_113
+
+- name: Netherlands
+  region: Europe
+  map_id: map_114
+
+- name: New Zealand
+  region: Oceania
+  map_id: map_115
+
+- name: North Macedonia
+  region: Europe
+  map_id: map_96
+
+- name: Norway
+  region: Europe
+  map_id: map_120
+
+- name: Oman
+  region: Asia
+  map_id: map_121
+
+- name: Pakistan
+  region: Asia
+  map_id: map_122
+
+- name: Palau
+  region: Oceania
+  map_id: palau
+  x: 859
+  y: 265
+
+- name: Palestine
+  region: Asia
+  map_id: map_123
+
+- name: Panama
+  region: North America
+  map_id: map_124
+
+- name: Peru
+  region: South America
+  map_id: map_127
+
+- name: Poland
+  region: Europe
+  map_id: map_129
+
+- name: Portugal
+  region: Europe
+  map_id: map_130
+
+- name: Qatar
+  region: Asia
+  map_id: map_132
+
+- name: Romania
+  region: Europe
+  map_id: map_133
+
+- name: Russia
+  region: Europe
+  map_id: map_134
+
+- name: San Marino
+  region: Europe
+  map_id: san-marino
+  x: 495
+  y: 138
+
+- name: Saudi Arabia
+  region: Asia
+  map_id: map_136
+
+- name: Serbia
+  region: Europe
+  map_id: map_138
+
+- name: Singapore
+  region: Asia
+  map_id: map_141
+
+- name: Slovakia
+  region: Europe
+  map_id: map_142
+
+- name: Slovenia
+  region: Europe
+  map_id: map_143
+
+- name: South Korea
+  region: Asia
+  map_id: map_147
+
+- name: Spain
+  region: Europe
+  map_id: map_149
+
+- name: Sweden
+  region: Europe
+  map_id: map_154
+
+- name: Switzerland
+  region: Europe
+  map_id: map_155
+
+- name: Thailand
+  region: Asia
+  map_id: map_161
+
+- name: Turkey
+  region: Asia
+  map_id: map_166
+
+- name: United Arab Emirates
+  region: Asia
+  map_id: map_170
+
+- name: United Kingdom
+  region: Europe
+  map_id: map_171
+
+- name: United States
+  region: North America
+  map_id: map_172
+
+- name: Uruguay
+  region: South America
+  map_id: map_173
+
+- name: Uzbekistan
+  region: Asia
+  map_id: map_174
+
+- name: Vatican City
+  region: Europe
+  map_id: vatican-city
+  x: 494
+  y: 145
+
+- name: Vietnam
+  region: Asia
+  map_id: map_176
+
+- name: Ireland
+  region: Europe
+  map_id: map_76
+
+- name: Taiwan
+  region: Asia
+  map_id: map_158
