@@ -11,7 +11,7 @@ order: 0
 I study how agents learn models of the world to reason, plan, and generalize from limited experience. My work spans **world models**, **deep reinforcement learning**, and **LLM reasoning**.
 
 <div class="profile-links">
-<a class="primary-link" href="{{ '/cv_yingchen_xu_202609.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a>
+<a class="primary-link" href="{{ '/yingchenxu_cv_202610.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a>
 <a href="{{ '/research_statement_202601.pdf' | relative_url }}">Research statement <span aria-hidden="true">↗</span></a>
 <a href="https://scholar.google.com/citations?user=JbfMp6gAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
 <a href="mailto:{{ site.author.email }}">Email <span aria-hidden="true">↗</span></a>
