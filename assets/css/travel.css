@@ -3,7 +3,7 @@
 .travel-intro h1 { margin-bottom: 12px; }
 .travel-intro p { color: var(--muted); margin: 0; }
 .travel-total { display: flex; align-items: center; gap: 16px; padding-left: 30px; border-left: 1px solid var(--line); white-space: nowrap; }
-.travel-total strong { font-family: Georgia, "Times New Roman", serif; font-size: 52px; font-weight: 400; line-height: 1; letter-spacing: -2px; }
+.travel-total strong { font-family: Georgia, "Times New Roman", serif; font-size: 47px; font-weight: 400; line-height: 1; letter-spacing: -1.6px; }
 .travel-total span { max-width: 70px; white-space: normal; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .travel-map-panel { margin: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #f5f8f9; }
 .map-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 22px 0; }
@@ -39,7 +39,7 @@
 .place-search input::placeholder { color: #6c7780; }
 .place-region { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 30px; padding-block: 26px; border-bottom: 1px solid var(--line); }
 .place-region:last-child { border-bottom: 0; }
-.place-region h3 { display: flex; align-items: baseline; gap: 10px; margin: 3px 0 0; font-size: 16px; font-weight: 600; }
+.place-region h3 { display: flex; align-items: baseline; gap: 10px; margin: 3px 0 0; font-size: 15.5px; font-weight: 600; }
 .region-count { font-size: 12px; font-weight: 400; color: var(--muted); }
 .place-region ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 24px; list-style: none; margin: 0; padding: 0; }
 .place-region li { font-size: 14px; color: #424d56; line-height: 1.5; padding-block: 5px; }
@@ -50,7 +50,7 @@
 @media (max-width: 700px) {
   .travel-intro { padding-top: 38px; }
   .travel-total { padding-left: 20px; gap: 10px; }
-  .travel-total strong { font-size: 42px; }
+  .travel-total strong { font-size: 39px; }
   .place-region { grid-template-columns: 1fr; gap: 12px; }
   .place-region ul { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .places-header { align-items: start; flex-direction: column; gap: 16px; }
@@ -63,10 +63,10 @@
 }
 @media (max-width: 480px) {
   .travel-intro { gap: 20px; align-items: start; }
-  .travel-intro h1 { font-size: 42px; }
+  .travel-intro h1 { font-size: 37px; }
   .travel-intro p { font-size: 14px; }
   .travel-total { flex-direction: column; align-items: start; gap: 6px; }
-  .travel-total strong { font-size: 36px; }
+  .travel-total strong { font-size: 33px; }
   .travel-total span { font-size: 11px; }
   .places-section { margin-top: 28px; }
   .place-search { width: 100%; }
