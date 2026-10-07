@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="COSTGRAD selects visual tokens using planning-cost gradients, enabling faster planning in token-based world models without retraining the predictor. NeurIPS 2026.">
   <meta property="og:title" content="COSTGRAD · Sparse Planning in Visual World Models">
-  <meta property="og:description" content="One gradient probe. Half the tokens. Faster world-model planning. NeurIPS 2026.">
+  <meta property="og:description" content="Goal-conditioned token selection for faster world-model planning, without retraining. NeurIPS 2026.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ycxuyingchen.github.io/costgrad/">
   <meta property="og:image" content="https://ycxuyingchen.github.io/assets/costgrad/social-preview.png">
@@ -15,7 +15,7 @@
   <link rel="canonical" href="https://ycxuyingchen.github.io/costgrad/">
   <title>COSTGRAD | Sparse Planning in Visual World Models</title>
   <link rel="icon" type="image/svg+xml" href="/assets/costgrad/favicon.svg">
-  <link rel="stylesheet" href="/assets/costgrad/style.css?v=20260925-simple2">
+  <link rel="stylesheet" href="/assets/costgrad/style.css?v=20261007-results">
   <script src="/assets/costgrad/site.js?v=20260925-simple" defer></script>
 </head>
 <body>
@@ -23,6 +23,7 @@
   <main id="main">
     <section class="hero shell" id="top" aria-labelledby="paper-title">
       <h1 id="paper-title">Sparse Planning in Visual World Models<br><span>via Cost Gradients</span></h1>
+      <p class="hero-tagline">Goal-conditioned token selection for faster world-model planning, without retraining.</p>
       <div class="authors"><a href="/">Yingchen Xu</a><span aria-hidden="true">·</span><a href="https://www.egrefen.com/">Edward Grefenstette</a></div>
       <p class="venue">NeurIPS 2026</p>
       <p class="publication-status">Paper &amp; code forthcoming</p>
@@ -37,13 +38,13 @@
         <figure class="demo-card"><div class="demo-image"><img src="/assets/costgrad/metaworld.png" data-animation="/assets/costgrad/metaworld.gif" alt="MetaWorld reach trajectory showing selected tokens around the robot arm and workspace" width="224" height="224"></div><figcaption><span>MetaWorld</span><span class="task-label">REACH</span></figcaption></figure>
       </div>
       <div class="demo-caption"><p><span class="legend-swatch kept"></span>Bright: retained tokens <span class="legend-swatch dropped"></span>Dim: discarded tokens</p><p>Recorded rollouts · 50% tokens · retrained predictors</p></div>
-      <div class="stats-strip"><div><strong>128<span>/256</span></strong><p>spatial tokens per sparse rollout</p></div><div><strong>2.6<span>×</span></strong><p>measured planning-step speedup on Wall</p></div><div><strong>1</strong><p>gradient probe per planning step</p></div></div>
+      <div class="stats-strip"><div><strong>128<span>/256</span></strong><p>spatial tokens per sparse rollout</p></div><div><strong>2.6<span>×</span></strong><p>estimated planning-time speedup</p></div><div><strong>1</strong><p>gradient probe per planning step</p></div></div>
     </section>
 
     <section class="method-section section-space" id="method" aria-labelledby="method-title">
       <div class="shell">
         <div class="section-topline"><div><span class="section-index">02 / THE IDEA</span><h2 id="method-title">Ask the planning objective.</h2></div><p class="section-aside">Prediction and control need<br>different things from an image.</p></div>
-        <p class="section-intro">COSTGRAD scores each visual token by how strongly it affects the planning cost. A single gradient probe chooses the tokens; the planner then searches over actions using that smaller representation.</p>
+        <p class="section-intro">COSTGRAD scores each visual token by how strongly it affects the planning cost. A single gradient probe chooses the tokens; the planner then searches over actions using that smaller representation. The predictor stays fixed: no retraining is required.</p>
         <div class="method-steps">
           <article><span class="step-number">01</span><h3>Probe the goal</h3><p>Encode the observation and goal. Predict one step with a zero-action probe and measure the latent distance to the goal.</p><div class="step-formula">L<sub>probe</sub> = ‖p(z, 0) − z<sup>goal</sup>‖²</div></article>
           <article><span class="step-number">02</span><h3>Score the tokens</h3><p>Backpropagate the cost to the input tokens. Retain the K positions with the largest gradient norms.</p><div class="step-formula">s<sub>j</sub> = ‖∂L<sub>probe</sub> / ∂z<sub>j</sub>‖₂</div></article>
@@ -56,21 +57,42 @@
       <div class="section-topline"><div><span class="section-index">03 / PERFORMANCE</span><h2 id="results-title">Less rollout compute.<br>Strong planning performance.</h2></div><span class="outline-tag">50% TOKEN RETENTION</span></div>
       <p class="section-intro">On the evaluated retrained AdaLN predictors, COSTGRAD achieves higher mean success than Full on three of four environments.</p>
       <div class="result-panel">
-        <div class="table-scroll"><table><caption>Retrained AdaLN checkpoints: planning success (%), mean ± standard deviation over three evaluation seeds.</caption><thead><tr><th scope="col">Environment</th><th scope="col">Full <span>256 tokens</span></th><th scope="col" class="cg-column">COSTGRAD <span>128 tokens</span></th><th scope="col">Random <span>128 tokens</span></th><th scope="col">CG − Full <span>percentage points</span></th></tr></thead><tbody>
-        <tr><th scope="row">PointMaze</th><td>88.2 <small>± 8.7</small></td><td class="cg-column">86.2 <small>± 6.1</small></td><td>77.0 <small>± 9.4</small></td><td>−2.0</td></tr>
-        <tr><th scope="row">Wall</th><td>84.7 <small>± 2.6</small></td><td class="cg-column">92.0 <small>± 1.8</small></td><td>67.0 <small>± 3.6</small></td><td class="positive">+7.3</td></tr>
-        <tr><th scope="row">PushT</th><td>62.4 <small>± 4.4</small></td><td class="cg-column">65.2 <small>± 6.5</small></td><td>41.3 <small>± 5.9</small></td><td class="positive">+2.8</td></tr>
-        <tr><th scope="row">MetaWorld <span class="row-note">reach</span></th><td>58.7 <small>± 1.8</small></td><td class="cg-column">65.6 <small>± 4.7</small></td><td>46.9 <small>± 3.1</small></td><td class="positive">+6.9</td></tr>
-        </tbody></table></div><p class="table-note">96 episodes per evaluation seed on a fixed predictor per environment. Positive differences are observed mean improvements, not a claim of statistical significance.</p>
+        <!-- Keep the reported means. Historical records disagree on the seed
+             type for this table; do not label its variation as evaluation-only. -->
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Retrained-checkpoint results"><table><caption>Retrained AdaLN checkpoints: mean planning success (%).</caption><thead><tr><th scope="col">Environment</th><th scope="col">Full <span>256 tokens</span></th><th scope="col" class="cg-column">COSTGRAD <span>128 tokens</span></th><th scope="col">Random <span>128 tokens</span></th><th scope="col">CG − Full <span>percentage points</span></th></tr></thead><tbody>
+        <tr><th scope="row">PointMaze</th><td>88.2</td><td class="cg-column">86.2</td><td>77.0</td><td>−2.0</td></tr>
+        <tr><th scope="row">Wall</th><td>84.7</td><td class="cg-column">92.0</td><td>67.0</td><td class="positive">+7.3</td></tr>
+        <tr><th scope="row">PushT</th><td>62.4</td><td class="cg-column">65.2</td><td>41.3</td><td class="positive">+2.8</td></tr>
+        <tr><th scope="row">MetaWorld <span class="row-note">reach</span></th><td>58.7</td><td class="cg-column">65.6</td><td>46.9</td><td class="positive">+6.9</td></tr>
+        </tbody></table></div><p class="table-note">Means across three runs per method and environment, with 96 episodes per run. These predictors are separate from the released-checkpoint control below.</p>
       </div>
-      <figure class="performance-figure"><img src="/assets/costgrad/wallclock_pareto.png" alt="Wall benchmark: COSTGRAD configurations form the measured speed–success frontier. At 50% tokens, fewer CEM iterations further reduce planning time." width="1364" height="550" loading="lazy"><figcaption><strong>Token selection and search budget are complementary.</strong> The Wall experiments measure a 2.6× planning-step speedup at 50% tokens, including selection overhead. Combining token selection with fewer CEM iterations yields approximately 5× speedup at the measured operating point.</figcaption></figure>
+      <details class="checkpoint-results" id="released-checkpoints">
+        <summary>Released JEPA-WMs checkpoints · no retraining <span aria-hidden="true">+</span></summary>
+        <div class="checkpoint-content">
+          <p>COSTGRAD also applies directly to released predictors. Full, COSTGRAD, and Random use the same checkpoint within each environment.</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Released-checkpoint results">
+            <table>
+              <caption>Released checkpoints: planning success (%), mean ± standard deviation over three evaluation seeds.</caption>
+              <thead><tr><th scope="col">Environment</th><th scope="col">Full <span>256 tokens</span></th><th scope="col" class="cg-column">COSTGRAD <span>128 tokens</span></th><th scope="col">Random <span>128 tokens</span></th></tr></thead>
+              <tbody>
+                <tr><th scope="row">PointMaze</th><td>87.7 <small>± 7.7</small></td><td class="cg-column">86.3 <small>± 11.9</small></td><td>70.7 <small>± 15.1</small></td></tr>
+                <tr><th scope="row">Wall</th><td>87.0 <small>± 2.8</small></td><td class="cg-column">87.0 <small>± 2.2</small></td><td>75.7 <small>± 4.6</small></td></tr>
+                <tr><th scope="row">PushT</th><td>66.3 <small>± 2.6</small></td><td class="cg-column">67.3 <small>± 3.4</small></td><td>21.0 <small>± 9.0</small></td></tr>
+                <tr><th scope="row">MetaWorld <span class="row-note">reach</span></th><td>58.3 <small>± 10.0</small></td><td class="cg-column">63.2 <small>± 5.2</small></td><td>20.8 <small>± 9.0</small></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">96 episodes per evaluation seed. COSTGRAD and Random retain 50% of the tokens. The MetaWorld task is Reach.</p>
+        </div>
+      </details>
+      <figure class="performance-figure"><img src="/assets/costgrad/wallclock_pareto.png" alt="Wall benchmark: planning success versus estimated planning time. At 50% tokens, fewer CEM iterations further reduce planning time." width="1364" height="550" loading="lazy"><figcaption><strong>Token selection and search budget are complementary.</strong> Component timings on the Wall predictor estimate a 2.6× planning-step speedup at 50% tokens, including selection overhead. Combining token selection with 15 rather than 30 CEM iterations gives an estimated 5.2× speedup.<span class="timing-note">Times are reconstructed from encoder, selection, and predictor timings; they exclude CEM sampling/refitting and goal-cost evaluation.</span></figcaption></figure>
     </section>
 
     <section class="findings-section section-space" id="findings" aria-labelledby="findings-title"><div class="shell">
-      <div class="section-topline"><div><span class="section-index">04 / WHAT MAKES IT WORK?</span><h2 id="findings-title">Good tokens need<br>a compatible predictor.</h2></div></div>
-      <div class="findings-grid"><div class="findings-copy"><p>Choosing relevant tokens is only half the problem. The predictor must still support useful action-conditioned rollouts when those tokens are the only ones present.</p><p>In matched AdaLN–concat experiments, COSTGRAD’s advantage over Random depends on how actions enter the predictor. Selected-token removal reduces measured action-pathway drift for AdaLN, but increases it for concat.</p><a class="inline-link" href="#scope">Read the scope and limitations <span aria-hidden="true">↘</span></a></div>
-      <div class="drift-card"><h3>Action-pathway drift</h3><p>Selected / random KL ratio · lower is less drift</p><div class="drift-row"><div><span>AdaLN</span><strong>0.29 <small>± 0.03</small></strong></div><div class="bar-track"><span style="width:19.33%"></span></div></div><div class="drift-row concat"><div><span>Matched concat</span><strong>1.33 <small>± 0.17</small></strong></div><div class="bar-track"><span style="width:88.67%"></span></div></div><p class="drift-note">Three training seeds per architecture. The ratio compares COSTGRAD-selected removal with random removal on the same predictor; it is a diagnostic, not a success guarantee.</p></div></div>
-      <details class="scope-details" id="scope"><summary>Where the evidence stops <span aria-hidden="true">+</span></summary><div><p>The empirical conditioning comparison covers AdaLN and channel-wise concat, with concat replication on Wall and PointMaze. FiLM and cross-attention remain untested. Action-pathway drift is evidence for a compatibility hypothesis, not a proven necessary or sufficient condition.</p><p>All experiments use visual token grids, CEM planning, and simulated continuous-control tasks. Public MetaWorld results show that inference-time applicability does not guarantee preserved performance on every checkpoint. The displayed MetaWorld demo uses the retrained reach predictor.</p></div></details>
+      <div class="section-topline"><div><span class="section-index">04 / UNDERSTANDING SPARSE PLANNING</span><h2 id="findings-title">Token choice changes<br>the planning problem.</h2></div></div>
+      <div class="findings-grid"><div class="findings-copy"><p>A token can matter for planning through its own prediction or by supplying context for predictions elsewhere. COSTGRAD uses sensitivity to the goal-reaching cost to identify that influence.</p><p>Removing tokens also changes the predictor’s computation. Sparse planning therefore depends on both the selected state information and the resulting action-conditioned rollouts.</p><a class="inline-link" href="#scope">Read the scope and limitations <span aria-hidden="true">↘</span></a></div>
+      <div class="effects-card"><h3>Two effects of token removal</h3><dl><dt>Which positions enter the cost</dt><dd>The planner compares predictions with the goal at retained positions.</dd><dt>What the predictor produces</dt><dd>Removing context can change predictions at those same retained positions.</dd></dl><p>Both effects can change how candidate actions are ranked.</p></div></div>
+      <details class="scope-details" id="scope"><summary>Scope and future work <span aria-hidden="true">+</span></summary><div><p>The performance comparisons above use AdaLN-conditioned predictors, DINOv2 visual features, CEM planning, and four simulated continuous-control tasks. Generality across other conditioning mechanisms, including FiLM and cross-attention, and evaluation on physical systems remain future work.</p><p>The displayed MetaWorld demo uses our retrained Reach predictor. The released-checkpoint control also evaluates Reach, using the public checkpoint. The one-step gradient probe selects tokens; action search still evaluates full-horizon rollouts.</p></div></details>
     </div></section>
 
     <section class="citation-section section-space shell" id="citation" aria-labelledby="citation-title"><div class="section-topline"><div><span class="section-index">05 / REFERENCE</span><h2 id="citation-title">Cite this work.</h2></div><button class="text-button" type="button" id="copy-citation" hidden>Copy BibTeX <span aria-hidden="true">↗</span></button></div><pre><code id="bibtex">@inproceedings{xu2026sparseplanning,
