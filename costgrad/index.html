@@ -15,8 +15,8 @@
   <link rel="canonical" href="https://ycxuyingchen.github.io/costgrad/">
   <title>COSTGRAD | Sparse Planning in Visual World Models</title>
   <link rel="icon" type="image/svg+xml" href="/assets/costgrad/favicon.svg">
-  <link rel="stylesheet" href="/assets/costgrad/style.css?v=20261007-results">
-  <script src="/assets/costgrad/site.js?v=20260925-simple" defer></script>
+  <link rel="stylesheet" href="/assets/costgrad/style.css?v=20261008-polish">
+  <script src="/assets/costgrad/site.js?v=20261008-polish" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -26,7 +26,10 @@
       <p class="hero-tagline">Goal-conditioned token selection for faster world-model planning, without retraining.</p>
       <div class="authors"><a href="/">Yingchen Xu</a><span aria-hidden="true">·</span><a href="https://www.egrefen.com/">Edward Grefenstette</a></div>
       <p class="venue">NeurIPS 2026</p>
-      <p class="publication-status"><a class="text-button" href="https://arxiv.org/abs/2610.10274v1">Paper (arXiv) <span aria-hidden="true">↗</span></a> · Code forthcoming</p>
+      <div class="publication-actions">
+        <a class="paper-button" href="https://arxiv.org/abs/2610.10274v1">Read paper <span aria-hidden="true">↗</span></a>
+        <span class="publication-status">Code forthcoming</span>
+      </div>
     </section>
 
     <section class="demo-section shell" id="demos" aria-labelledby="demo-title">
@@ -45,11 +48,13 @@
       <div class="shell">
         <div class="section-topline"><div><span class="section-index">02 / THE IDEA</span><h2 id="method-title">Ask the planning objective.</h2></div><p class="section-aside">Prediction and control need<br>different things from an image.</p></div>
         <p class="section-intro">COSTGRAD scores each visual token by how strongly it affects the planning cost. A single gradient probe chooses the tokens; the planner then searches over actions using that smaller representation. The predictor stays fixed: no retraining is required.</p>
-        <div class="method-steps">
-          <article><span class="step-number">01</span><h3>Probe the goal</h3><p>Encode the observation and goal. Predict one step with a zero-action probe and measure the latent distance to the goal.</p><div class="step-formula">L<sub>probe</sub> = ‖p(z, 0) − z<sup>goal</sup>‖²</div></article>
-          <article><span class="step-number">02</span><h3>Score the tokens</h3><p>Backpropagate the cost to the input tokens. Retain the K positions with the largest gradient norms.</p><div class="step-formula">s<sub>j</sub> = ‖∂L<sub>probe</sub> / ∂z<sub>j</sub>‖₂</div></article>
-          <article><span class="step-number">03</span><h3>Plan on the subset</h3><p>Run the full CEM action search on those positions. Keep the subset fixed within a planning step; select again when replanning.</p><div class="step-formula">S = TopK(s) → sparse rollouts</div></article>
-        </div>
+        <figure class="method-figure">
+          <a class="figure-link" href="/assets/costgrad/method_diagram.svg" data-figure-title="COSTGRAD: select tokens, then plan" aria-label="Enlarge the COSTGRAD method diagram">
+            <img src="/assets/costgrad/method_diagram.svg" alt="A full-token zero-action world-model probe produces a goal cost. Backpropagating that cost scores input tokens; top-K selection fixes the context and goal subset for sparse CEM planning and action execution." width="792" height="452" loading="lazy">
+            <span class="figure-expand">Enlarge diagram <span aria-hidden="true">↗</span></span>
+          </a>
+          <figcaption>Select once per planning step, then reuse the subset throughout action search. Reselect at the next observation. Token grids are schematic.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -85,7 +90,7 @@
           <p class="table-note">96 episodes per evaluation seed. COSTGRAD and Random retain 50% of the tokens. The MetaWorld task is Reach.</p>
         </div>
       </details>
-      <figure class="performance-figure"><img src="/assets/costgrad/wallclock_pareto.png" alt="Wall benchmark: planning success versus estimated planning time. At 50% tokens, fewer CEM iterations further reduce planning time." width="1364" height="550" loading="lazy"><figcaption><strong>Token selection and search budget are complementary.</strong> Component timings on the Wall predictor estimate a 2.6× planning-step speedup at 50% tokens, including selection overhead. Combining token selection with 15 rather than 30 CEM iterations gives an estimated 5.2× speedup.<span class="timing-note">Times are reconstructed from encoder, selection, and predictor timings; they exclude CEM sampling/refitting and goal-cost evaluation.</span></figcaption></figure>
+      <figure class="performance-figure"><a class="figure-link" href="/assets/costgrad/wallclock_pareto.png" data-figure-title="Planning success and compute on Wall" aria-label="Enlarge the planning performance figure"><img src="/assets/costgrad/wallclock_pareto.png" alt="Wall benchmark: planning success versus estimated planning time. At 50% tokens, fewer CEM iterations further reduce planning time." width="1364" height="550" loading="lazy"><span class="figure-expand">Enlarge figure <span aria-hidden="true">↗</span></span></a><figcaption><strong>Token selection and search budget are complementary.</strong> Component timings on the Wall predictor estimate a 2.6× planning-step speedup at 50% tokens, including selection overhead. Combining token selection with 15 rather than 30 CEM iterations gives an estimated 5.2× speedup.<span class="timing-note">Times are reconstructed from encoder, selection, and predictor timings; they exclude CEM sampling/refitting and goal-cost evaluation.</span></figcaption></figure>
     </section>
 
     <section class="findings-section section-space" id="findings" aria-labelledby="findings-title"><div class="shell">
@@ -104,6 +109,11 @@
   url       = {https://arxiv.org/abs/2610.10274v1}
 }</code></pre><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></section>
   </main>
+  <dialog class="figure-dialog" id="figure-dialog" aria-labelledby="figure-dialog-title" aria-describedby="figure-dialog-hint">
+    <div class="figure-dialog-header"><h2 id="figure-dialog-title">Figure</h2><form method="dialog"><button class="figure-close" type="submit" autofocus>Close <span aria-hidden="true">×</span></button></form></div>
+    <p class="figure-dialog-hint" id="figure-dialog-hint">Scroll to explore the full-size figure.</p>
+    <div class="figure-dialog-stage" tabindex="0" role="region" aria-label="Full-size figure"><img id="figure-dialog-image" alt=""></div>
+  </dialog>
   <footer class="site-footer shell"><a class="wordmark" href="#top">COSTGRAD<span class="brand-period">.</span></a><p>Sparse Planning in Visual World Models via Cost Gradients<br><span>Yingchen Xu &amp; Edward Grefenstette · NeurIPS 2026</span></p><a href="/">Back to homepage <span aria-hidden="true">↗</span></a></footer>
 </body>
 </html>

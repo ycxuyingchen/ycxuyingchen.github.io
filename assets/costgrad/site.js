@@ -31,4 +31,33 @@
       copyStatus.textContent = 'Citation selected. Press Command+C or Ctrl+C to copy.';
     }
   });
+  const figureDialog = document.querySelector('#figure-dialog');
+  const figureImage = document.querySelector('#figure-dialog-image');
+  const figureTitle = document.querySelector('#figure-dialog-title');
+  let figureOpener;
+  if (figureDialog && typeof figureDialog.showModal === 'function') {
+    document.querySelectorAll('[data-figure-title]').forEach(link => {
+      link.addEventListener('click', event => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        figureOpener = link;
+        figureTitle.textContent = link.dataset.figureTitle;
+        figureImage.src = link.href;
+        figureImage.alt = link.querySelector('img').alt;
+        figureDialog.showModal();
+        document.body.classList.add('figure-open');
+        const stage = figureDialog.querySelector('.figure-dialog-stage');
+        stage.scrollTop = 0;
+        stage.scrollLeft = 0;
+      });
+    });
+    figureDialog.addEventListener('close', () => {
+      document.body.classList.remove('figure-open');
+      figureOpener?.focus({ preventScroll: true });
+    });
+    figureDialog.addEventListener('click', event => {
+      const rect = figureDialog.getBoundingClientRect();
+      if (event.target === figureDialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) figureDialog.close();
+    });
+  }
 })();
